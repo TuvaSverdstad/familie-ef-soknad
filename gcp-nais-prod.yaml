@@ -21,7 +21,7 @@ spec:
     enabled: true
     path: /metrics
   ingresses:
-    - https://familie.nav.no/alene-med-barn/soknad
+    - https://familie-gcp.nav.no/alene-med-barn/soknad
   accessPolicy:
     outbound:
       external:
