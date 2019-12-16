@@ -25,7 +25,7 @@ spec:
   accessPolicy:
     outbound:
       rules:
-        application: familie-ef-soknad-api
+        - application: familie-ef-soknad-api
       external:
         - host: appres.nav.no
         - host: loginservice.nav.no
