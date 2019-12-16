@@ -5,13 +5,13 @@ interface IEnvUrls {
 }
 
 const Environment = (): IEnvUrls => {
-  if (window.location.hostname.indexOf('www-q0') > -1) {
+  if (window.location.hostname.indexOf('familie-gcp.dev-nav.no') > -1) {
     return {
       veiviserUrl: 'http://familie-ef-veiviser',
       apiUrl: 'http://familie-ef-soknad-api',
       loginService: 'https://loginservice-q.nav.no/login',
     };
-  } else if (window.location.hostname.indexOf('www') > -1) {
+  } else if (window.location.hostname.indexOf('familie-gcp.nav.no') > -1) {
     return {
       veiviserUrl: 'http://familie-ef-veiviser',
       apiUrl: 'http://familie-ef-soknad-api',
