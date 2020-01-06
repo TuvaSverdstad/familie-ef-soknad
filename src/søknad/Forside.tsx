@@ -23,6 +23,8 @@ const Forside: React.FC<any> = ({ intl }) => {
   const history = useHistory();
   const nestePath = hentNesteRoute(Routes, location.pathname);
 
+  console.log(history);
+
   const onChange = () => {
     settSøknad({ ...søknad, bekreftet: !søknad.bekreftet });
   };
@@ -70,7 +72,7 @@ const Forside: React.FC<any> = ({ intl }) => {
           {søknad.bekreftet ? (
             <FeltGruppe classname={'sentrert'}>
               <KnappBase
-                onClick={() => history.push(nestePath.path)}
+                onClick={() => history.push("/familie/alene-med-barn/soknad" + nestePath.path)}
                 type={'hoved'}
               >
                 <LocaleTekst tekst={'knapp.start'} />
