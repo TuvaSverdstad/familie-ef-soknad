@@ -139,11 +139,11 @@ workflows:
             - deploy_docker
           filters:
             branches:
-              only: /.*/
+              only: master
       - deploy_prod:
           context: familie-ci
           requires:
             - deploy_docker
           filters:
             branches:
-              only: master
+              only: /.*/
