@@ -1,6 +1,6 @@
 export interface IPerson {
   søker: ISøker;
-  barn?: IBarn[];
+  barn: IBarn[];
 }
 
 export interface ISøker {
@@ -28,9 +28,19 @@ export interface IAdresse {
 }
 
 export interface IBarn {
+  id?: string;
   alder: number;
   fnr: string;
   fødselsdato: string;
+  personnummer?: string;
   harSammeAdresse: boolean;
   navn: string;
+  ufødt?: boolean;
+  lagtTil?: boolean;
+}
+
+export interface IPersonDetaljer {
+  navn: string;
+  fødselsdato: Date;
+  fødselsnummer: string;
 }

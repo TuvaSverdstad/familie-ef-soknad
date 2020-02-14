@@ -1,17 +1,26 @@
 const CracoLessPlugin = require('craco-less');
 const norskeOrdMedÆØÅ = [
-  'Søknad',
+  'ISpørsmål',
   'ISøknad',
-  'søknad',
+  'JaNeiSpørsmål',
   'Språk',
   'SpråkContext',
   'SpråkProvider',
   'Språkvelger',
-  'JaNeiSpørsmål',
-  'ISpørsmål',
   'Spørsmål',
   'SpørsmålContext',
   'SpørsmålProvider',
+  'Søknad',
+  'Søknadsdialog',
+  'MultiSvarSpørsmål',
+  'Søknadsbegrunnelse',
+  'LeggTilBarnUfødt',
+  'LeggTilBarnFødt',
+  'SøkerSkalFlytteSammenEllerFåSamboer',
+  'EndringISamvær',
+  'NårFlyttetDereFraHverandre',
+  'SøkerErGift',
+  'SøkerHarSøktSeparasjon',
 ];
 
 module.exports = {
