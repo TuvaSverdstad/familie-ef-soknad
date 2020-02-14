@@ -7,14 +7,14 @@ interface IEnvUrls {
 const Environment = (): IEnvUrls => {
   if (window.location.hostname.indexOf('familie-gcp.dev-nav.no') > -1) {
     return {
-      veiviserUrl: 'http://familie-ef-veiviser',
-      apiUrl: 'familie-ef-soknad-api',
+      veiviserUrl: 'https://www-q0.nav.no/familie/alene-med-barn/veiviser',
+      apiUrl: 'http://familie-ef-soknad-api/',
       loginService: 'https://loginservice-q.nav.no/login',
     };
   } else if (window.location.hostname.indexOf('familie-gcp.nav.no') > -1) {
     return {
-      veiviserUrl: 'http://familie-ef-veiviser',
-      apiUrl: 'http://familie-ef-soknad-api',
+      veiviserUrl: 'https://www.nav.no/familie/alene-med-barn/veiviser',
+      apiUrl: 'http://familie-ef-soknad-api/api',
       loginService: 'https://loginservice.nav.no/login',
     };
   } else {
