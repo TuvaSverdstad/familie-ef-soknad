@@ -4,5 +4,5 @@ ADD ./ /var/server/
 RUN yarn
 RUN yarn build
 
-EXPOSE 3000
-CMD ["yarn", "start"]
+EXPOSE 8000
+CMD ["yarn", "serve"]
