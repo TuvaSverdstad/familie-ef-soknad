@@ -7,29 +7,14 @@ const app = express();
 const port = process.env.PORT || 8000;
 const proxy = require('http-proxy-middleware');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/ping', (req, res) => {
-  res.send({ express: ' Ack :) ' });
+app.use('/', function(req, res, next) {
+  console.log(`Server: A new request received at ${process.env.NODE_ENV}`);
+  next();
 });
 
-app.get('/', function(req, res) {
-  console.log(__dirname);
-
-  res.sendFile(path.join(__dirname, 'build/', 'index.html'));
-});
-
-app.listen(port, () => console.log(`Listening on port ${port}`));
-app.use('/static', express.static('./build/static/'));
-
-const url =
-  process.env.ENV === 'local'
-    ? 'http://localhostTHISISWRONG!!!!!:8091'
-    : 'http://familie-ef-soknad-api';
-
-console.log(process.env.NODE_ENV, process.env.ENV, ' ', url);
-
+// proxy
 app.use(
   '/api',
   proxy('/api', {
@@ -43,3 +28,19 @@ app.use(
     secure: true,
   })
 );
+
+app.get('/ping', (req, res) => {
+  res.send({ express: ' Ack :) ' });
+});
+
+app.get('/', function(req, res) {
+  console.log(__dirname);
+  res.sendFile(path.join(__dirname, 'build/', 'index.html'));
+});
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
+
+console.log('Node env: ', process.env.NODE_ENV);
+
+app.use(bodyParser.json({ limit: '200mb' }));
+app.use(bodyParser.urlencoded({ limit: '200mb', extended: true }));
