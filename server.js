@@ -4,7 +4,7 @@ var path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 const proxy = require('http-proxy-middleware');
 
 app.use(express.static(path.join(__dirname, 'build')));
