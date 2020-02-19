@@ -2,7 +2,6 @@
   "name": "familie-ef-soknad",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/familie/alene-med-barn/soknad",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
