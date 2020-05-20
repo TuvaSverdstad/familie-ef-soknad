@@ -60,7 +60,7 @@ export default {
     'periode.lesmer-innhold': 'Legg til omtrentelige datoer.',
 
     'side.bekreftelse':
-      'Jeg, [0], lover å gi så riktige og fullstendige opplysninger som mulig.',
+      'Jeg, [0], bekrefter at jeg vil gi riktige og fullstendige opplysninger',
     'side.info.overgangsstønad':
       'Overgangsstønaden skal bidra til å sikre inntekt i en tidsbegrenset periode. Vi vil beregne overgangsstønaden din ut i fra den arbeidsinntekten du har eller kan forventes å få.',
 
@@ -78,14 +78,14 @@ export default {
 
     'personopplysninger.fnr': 'Fødselsnr',
     'personopplysninger.telefonnr': 'Telefonnummer',
-    'personopplysninger.feilmelding.telefonnr': 'Du må ha minst 8 siffre',
+    'personopplysninger.feilmelding.telefonnr': 'Telefonnummeret må ha minst 8 siffer',
     'personopplysninger.statsborgerskap': 'Statsborgerskap',
     'personopplysninger.alert.infohentet':
       'Hvis opplysningene vi har om deg ikke stemmer, må du endre disse hos Folkeregisteret.',
 
     'personopplysninger.spm.riktigAdresse': 'Bor du på denne adressen?',
     'personopplysninger.alert.riktigAdresse':
-      'Du må oppdatere Folkeregisteret med riktig adresse for å søke digitalt. Hvis du ikke skal endre Folkeregistrert adresse, kan du søke på papir med bostedsadressen din.',
+      'Du må oppgi riktig adresse til Folkeregisteret for å bruke denne søknaden.',
     'personopplysninger.info.endreAdresse':
       'Skal du ikke endre adresse i Folkeregisteret?',
     'personopplysninger.lenke.pdfskjema': 'Bruk PDF-skjema',
@@ -125,13 +125,13 @@ export default {
     'sivilstatus.alert.erUformeltSeparertEllerSkilt':
       'Du må legge ved dokumentasjon på separasjon eller skilsmisse',
     'sivilstatus.spm.begrunnelse':
-      'Hva er grunnen til at du er alene med barn?',
+      'Hvorfor er du alene med barn?',
 
     'sivilstatus.svar.samlivsbruddForeldre':
       'Samlivsbrudd med den andre forelderen',
     'sivilstatus.svar.samlivsbruddAndre': 'Samlivsbrudd med noen andre',
     'sivilstatus.svar.aleneFraFødsel': 'Jeg er alene med barn fra fødsel',
-    'sivilstatus.svar.endringISamværsordning': 'Endring i samværsordning',
+    'sivilstatus.svar.endringISamværsordning': 'Endring i omsorgen for barn',
     'sivilstatus.svar.dødsfall': 'Jeg er alene med barn på grunn av dødsfall',
     'sivilstatus.alert.dødsfall':
       'Når du er alene med barn på grunn av dødsfall, kan du ha rett til stønad til <a href="https://www.nav.no/no/person/pensjon/andre-pensjonsordninger/ytelser-til-gjenlevende-ektefelle" target="_blank" >gjenlevende</a> og <a href="https://www.nav.no/no/person/pensjon/andre-pensjonsordninger/barnepensjon" target="_blank" >barnepensjon</a>. ',
@@ -245,16 +245,8 @@ export default {
     'barnekort.adresse.skalIkkeBo': 'Skal ikke bo hos deg',
     'barnekort.fjern': 'Fjern fra søknad',
 
-    'barnasbosted.kanikkeoppgiforelder':
-      'Jeg kan ikke oppgi den andre forelderen',
     'barnasbosted.sidetittel': 'Barnas bosted og foreldrenes samværsordning',
     'barnasbosted.borinorge': 'Bor [0]s andre forelder i Norge?',
-    'barnasbosted.hvilketLand': 'Hvilket land bor den andre forelderen i?',
-    'barnasbosted.land': 'Land',
-    'barnasbosted.spm.hvorforikkeoppgi':
-      'Hvorfor kan du ikke oppgi den andre forelderen?',
-    'barnasbosted.spm.donorbarn': 'Donorbarn',
-    'barnasbosted.spm.annet': 'Annet',
     'barnasbosted.avtale':
       'Har du og den andre forelderen skriftlig avtale om delt bosted for [0]?',
     'barnasbosted.alert-advarsel.avtaleDeltBosted':
@@ -280,7 +272,7 @@ export default {
       '<li>bekreftelse fra for eksempel barnehage/skole, barnevern eller helsestasjon</li>' +
       '</ul>',
 
-    'barnasbosted.element.andreforelder': '[0]s andre forelder',
+    'barnasbosted.element.andreforelder': 's andre forelder',
     'barnasbosted.forelder.annen': 'Annen forelder',
     'barnasbosted.forelder.sammesom': 'Samme som',
     'barnasbosted.knapp.endre': 'Endre informasjon',
@@ -323,7 +315,6 @@ export default {
 
     'barnasbosted.spm.borISammeHus':
       'Bor du og den andre forelderen til [0] i samme hus, blokk, gårdstun, kvartal eller vei/gate?',
-    'barnasbosted.spm.hvordanBorDere': 'Hvordan bor dere nærme hverandre?',
     'barnasbosted.spm.vetikke': 'Jeg vet ikke hvor den andre forelderen bor',
     'barnasbosted.hjelpetekst.borisammehus.apne':
       'Hvorfor spør vi om dere bor nærme hverandre?',
@@ -339,8 +330,6 @@ export default {
     'barnasbosted.spm.kunNårLeveres':
       'Vi møtes kun når barnet skal hentes eller leveres',
     'barnasbosted.spm.møtesUtenom': 'Vi møtes også utenom henting og levering',
-    'barnasbosted.spm.beskrivSamværUtenBarn':
-      'Hvor mye er du sammen med den andre forelderen til [0]?',
 
     'stegtittel.arbeidssituasjon': 'Arbeid, utdanning og andre aktiviteter',
     'arbeidssituasjon.spm': 'Hvordan er arbeidsituasjonen din?',
@@ -377,8 +366,8 @@ export default {
       '</ul>',
 
     'arbeidsforhold.tittel': 'Om arbeidsforholdet ditt',
-    'arbeidsforhold.tittel.arbeidsgiver': 'Arbeidsgiver',
-    'arbeidsforhold.knapp.slettArbeidsgiver': 'Fjern arbeidsgiver',
+    'arbeidsforhold.tittel.arbeidsgiver': 'Arbeidsdforhold',
+    'arbeidsforhold.knapp.slettArbeidsgiver': 'Fjern arbeidsforhold',
 
     'arbeidsforhold.label.navn': 'Navn på arbeidsgiveren',
     'arbeidsforhold.label.arbeidsmengde': 'Hvor mye jobber du?',
@@ -388,8 +377,8 @@ export default {
     'arbeidsforhold.svar.midlertidig': 'Midlertidig',
     'arbeidsforhold.label.sluttdato': 'Har du en sluttdato?',
     'arbeidsforhold.datovelger.sluttdato': 'Når skal du slutte?',
-    'arbeidsforhold.label.flereArbeidsgivere': 'Har du flere arbeidsgivere?',
-    'arbeidsforhold.knapp.leggTilArbeidsgiver': 'Legg til arbeidsgiver',
+    'arbeidsforhold.label.flereArbeidsgivere': 'Har du flere arbeidsforhold?',
+    'arbeidsforhold.knapp.leggTilArbeidsgiver': 'Legg til arbeidsforhold',
 
     'firma.tittel': 'Om firmaet du driver',
     'firma.label.navn': 'Navn på firma',
@@ -622,7 +611,7 @@ export default {
       '<li>stillingsprosent</li>' +
       '<li>dato for oppstart</li>' +
       '<li>dato du fikk tilbudet</li></ul>',
-    'dokumentasjon.utdanning.tittel': 'Dokumentasjon på utdanningen du skal ta',
+    'dokumentasjon.utdanning.tittel': 'Du må legge ved tilbud om utdanning',
     'dokumentasjon.utdanning.beskrivelse':
       'Dokumentasjonen må tydelig vise:<ul>' +
       '<li>navn på studiested</li>' +
@@ -686,8 +675,6 @@ export default {
     'barnadine.leggtil.info':
       'Er du gravid eller har du nylig fått barn som foreløpig ikke er registrert i Folkeregisteret?',
     'barnasbosted.borinorge': 'Bor andre forelder i Norge?',
-    'barnasbosted.hvilketLand': 'Hvilket land bor den andre forelderen i?',
-    'barnasbosted.land': 'Land',
     'barnasbosted.avtale':
       'Har du og den andre forelderen skriftlig avtale om delt bosted for [0]?',
     'barnasbosted.spm.harAnnenForelderSamværMedBarn':
